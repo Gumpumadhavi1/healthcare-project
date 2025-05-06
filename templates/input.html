@@ -1,0 +1,346 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Women's Health And Wellness</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+    }
+
+    .navbar {
+      background-color: rgba(0, 0, 0, 0.1);
+      color: darkviolet;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      position: relative;
+      z-index: 10;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .logo-img {
+      height: 80px;
+      object-fit: contain;
+      border-radius: 15px;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-links li a {
+      text-decoration: none;
+      color: palevioletred;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: color 0.3s ease, border 0.3s ease;
+    }
+
+    .nav-links li a:hover {
+      color: darkmagenta;
+    }
+
+   
+
+    form {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 1500px;
+      margin: 40px auto;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: darkred;
+    }
+
+    h2 {
+      color: darkviolet;
+      margin-top: 30px;
+    }
+
+    label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .checkbox-group, .radio-group {
+      margin-bottom: 15px;
+    }
+
+    .checkbox-group label, .radio-group label {
+      display: inline-block;
+      margin-right: 15px;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      display: block;
+      margin: 20px auto;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    .consent-container {
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.consent-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: 500px;
+  margin: 0 auto 20px;
+}
+.footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: blue;
+    }
+
+
+    @media (max-width: 768px) {
+      .nav-links {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-end;
+      }
+
+      .logo-img {
+        height: 50px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+          <div class="logo">
+            <img src="/static/logo.jpg" alt="Women's Health Logo" class="logo-img">
+          </div>
+          <ul class="nav-links">
+            <li><a href="#login">Login</a></li>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#input">Health Input</a></li>
+            <li><a href="#report">Personalized Report</a></li>
+            <li><a href="#recommendations">Recommendations</a></li>
+            <li><a href="#consultation">Consultation</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#Logout">Logout</a></li>
+          </ul>
+        </nav>
+      </header>
+    
+
+  
+  <form>
+    <h1>Health Input Form</h1>
+
+    <h2>Basic Information</h2>
+    <label>Full Name</label>
+    <input type="text" required>
+
+    <label>Age</label>
+    <input type="number" min="10" required>
+
+    <label>Height (cm)</label>
+    <input type="number">
+
+    <label>Weight (kg)</label>
+    <input type="number">
+
+    <label>Email or Phone (optional)</label>
+    <input type="text">
+
+    <h2>Mental Health</h2>
+    <div class="checkbox-group">
+      <label><input type="checkbox"> Depression</label>
+      <label><input type="checkbox"> Anxiety Disorders</label>
+      <label><input type="checkbox"> Schizophrenia</label>
+      <label><input type="checkbox"> Bipolar Disorder</label>
+      <label><input type="checkbox"> Panic Disorders</label>
+      <label><input type="checkbox"> None</label>
+    </div>
+
+    <h2>Metabolic Health</h2>
+    <div class="checkbox-group">
+      <label><input type="checkbox"> Diabetes</label>
+      <label><input type="checkbox"> Hypothyroidism</label>
+      <label><input type="checkbox"> Addition's Disease</label>
+      <label><input type="checkbox"> Obesity</label>
+      <label><input type="checkbox"> Grave's Disesae</label>
+    </div>
+
+    <h2>Respiratory Health</h2>
+    <div class="checkbox-group">
+      <label><input type="checkbox"> Asthma</label>
+      <label><input type="checkbox"> Sleep Apnea</label>
+      <label><input type="checkbox"> Tuberculosis</label>
+      <label><input type="checkbox"> Lung Cancer</label>
+      <label><input type="checkbox"> None</label>
+    </div>
+
+    <h2>Urinary Health</h2>
+    <div class="checkbox-group">
+      <label><input type="checkbox"> Urinary Tract Infection</label>
+      <label><input type="checkbox"> Painful urination</label>
+      <label><input type="checkbox"> Bladder Cancer</label>
+      <label><input type="checkbox"> Urinary Incontinence</label>
+      <label><input type="checkbox"> Kidney stones</label>
+    </div>
+
+    <h2>Digestive Health</h2>
+    <div class="checkbox-group">
+      <label><input type="checkbox"> Gallstones</label>
+      <label><input type="checkbox"> Celiac Disease</label>
+      <label><input type="checkbox"> Crohn's Disease</label>
+      <label><input type="checkbox"> Peptic Ulcers</label>
+      <label><input type="checkbox"> Hemorrhoids</label>
+    </div>
+
+    <h2>Skin & Hair Health</h2>
+    <div class="checkbox-group">
+      <label><input type="checkbox"> Acne</label>
+      <label><input type="checkbox"> Eczema</label>
+      <label><input type="checkbox"> Psoriasis</label>
+      <label><input type="checkbox"> Vitiligo</label>
+      <label><input type="checkbox"> Cellulitis</label>
+    </div>
+
+    <h2>Bone & Joint Health</h2>
+    <div class="checkbox-group">
+      <label><input type="checkbox"> Osteoporosis</label>
+      <label><input type="checkbox"> Arthritis</label>
+      <label><input type="checkbox"> Gout</label>
+      <label><input type="checkbox"> Scoliosis</label>
+      <label><input type="checkbox"> Lupus(sle)</label>
+    </div>
+
+    <h2>Cardiovascular Health</h2>
+    <div class="checkbox-group">
+      <label><input type="checkbox"> High Blood Pressure</label>
+      <label><input type="checkbox"> Stroke</label>
+      <label><input type="checkbox"> Heart Disease</label>
+      <label><input type="checkbox"> Pericarditis</label>
+      <label><input type="checkbox"> Cardiomyopathy</label>
+    </div>
+
+    <h2>Breast Health</h2>
+    <div class="checkbox-group">
+      <label><input type="checkbox"> Mastitis</label>
+      <label><input type="checkbox"> Galactorrhea</label>
+      <label><input type="checkbox"> Breast Cancer</label>
+      <label><input type="checkbox"> Breast Calcifications</label>
+    </div>
+
+    <h2>Reproductive Health</h2>
+    <div class="checkbox-group">
+      <label><input type="checkbox"> Endometriosis</label>
+      <label><input type="checkbox"> Uterine Fibroids</label>
+      <label><input type="checkbox"> Menopause</label>
+      <label><input type="checkbox"> Vulvodynia</label>
+    </div>
+    <h2>Lifestyle</h2>
+    <label>Dietary preference</label>
+    <select>
+      <option>Vegetarian</option>
+      <option>Non-Vegetarian</option>
+      <option>Vegan</option>
+      <option>Other</option>
+    </select>
+
+    <label>Physical activity</label>
+    <select>
+      <option>None</option>
+      <option>Light</option>
+      <option>Moderate</option>
+      <option>Intense</option>
+    </select>
+
+   <label>Smoking</label>
+    <select><option>Yes</option><option>No</option></select>
+
+    <label>Alcohol</label>
+    <select><option>Yes</option><option>No</option></select>
+
+    <label>Sleep hours per night</label>
+    <input type="number">
+
+    <label>Stress level</label>
+    <select>
+      <option>Low</option>
+      <option>Medium</option>
+      <option>High</option>
+    </select>
+    <h2>Family Medical History</h2>
+    <div class="checkbox-group">
+      <label><input type="checkbox"> Breast cancer</label>
+      <label><input type="checkbox"> Ovarian cancer</label>
+      <label><input type="checkbox"> Thyroid disorders</label>
+      <label><input type="checkbox"> Diabetes</label>
+      <label><input type="checkbox"> Hypertension</label>
+      <label><input type="checkbox"> Other</label>
+    </div>
+
+    <h2>Uploads (Optional)</h2>
+    <label>Upload lab reports</label>
+    <input type="file" accept=".pdf,.jpg,.jpeg,.png">
+    <h2>Consent</h2>
+    <div class="consent-container">
+      <label>
+        <input type="checkbox" id="consent" required>
+        I agree to share my data for personalized health recommendations.
+      </label>
+    </div>
+    
+    
+
+    <button type="submit">Submit</button>
+    
+  <div class="footer">
+    &copy; 2025 Women's Health AI | Confidential and compassionate care for every woman.
+  </div>
+
+  </form>
+</body>
+</html>
